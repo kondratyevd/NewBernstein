@@ -9,5 +9,6 @@ After that, the integrals over all the subranges are evaluated and the function 
 
 
 Implementation in ROOT:
+
 Follow the directions here ("Extending ROOT with custom classes"): 
 http://webhome.phy.duke.edu/~dmb60/the-guide/
