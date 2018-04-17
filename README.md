@@ -1,4 +1,4 @@
-In RooFit, fitting with Bernstein polynomials doesn't work correctly when fitting with RooBernstein() in multiple subranges.
+In RooFit, fit with Bernstein polynomials (RooBernstein() class) doesn't work correctly in multiple subranges.
 
 NewBernstein() is designed using the approach similar to that described here: https://sft.its.cern.ch/jira/browse/ROOT-6664
 
