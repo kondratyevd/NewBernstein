@@ -1,6 +1,9 @@
 # Problem with RooBernstein()
 In RooFit, fit with Bernstein polynomials (RooBernstein() class) doesn't work correctly in multiple subranges.
-The problem occurs during evaluation of the integral of a polynomial. Bernstein polynomials are defined in range [0,1]. The original algorithm, contracts any range down to [0,1], then evaluates a definite integral of the polynomial over [0,1] and then rescales the function back. That obviously leads to incorrect behaviour when dealing with multiple subranges.
+
+The problem occurs during evaluation of the integral of a polynomial. Bernstein polynomials are defined in range [0,1]. The original algorithm, contracts any range down to [0,1], then evaluates a definite integral of the polynomial over [0,1] and then rescales the function back. 
+
+That obviously leads to incorrect behaviour when dealing with multiple subranges.
 
 # Solution
 **NewBernstein()** is designed using the approach similar to that described here: https://sft.its.cern.ch/jira/browse/ROOT-6664 .
